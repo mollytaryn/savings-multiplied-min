@@ -10,7 +10,10 @@
     "type": "git",
     "url": "https://github.com/AndyMeagher/savings-multiplied-min.git"
   },
-  "author": "",
+  "authors": [
+  "AndyMeagher",
+  "brayhoward"
+  ]
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/AndyMeagher/savings-multiplied-min/issues"
