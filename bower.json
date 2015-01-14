@@ -1,0 +1,11 @@
+{
+  "name": "savings-multiplied-min",
+  "version": "0.0.1",
+  "homepage": "https://github.com/AndyMeagher/savings-multiplied-min",
+  "authors": [
+    "brayhoward <brandonrhoward@gmail.com>"
+  ],
+  "main": "public/index.html",
+  "license": "MIT",
+  "private": true
+}
