@@ -1,5 +1,42 @@
 @import "variables";
 @import "headings";
 body {
-	background-color: $primary;
+	background-color: $primary1;
+}
+.r1 {
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-top: 80px;
+	background-color: $primary2;
+}
+li {
+	display: inline-block;
+}
+
+.logo-container {
+	height: 200px;
+	width: 400px;
+	background-image: url(https://raw.githubusercontent.com/elizabrock/SavingsMultipliedRedux/master/app/assets/images/owls/savings-multiplied-logo-WEB.png);
+	background-size: cover;
+}
+.clogo {
+	border-top-left-radius: 2em;
+	background-color: white;
+	height: 200px;
+	width: 400px;
+}
+.toplist {
+	border-top-right-radius: 2em;
+	background-color: white;
+	height: 200px;
+	width: 400px;
+}
+.r3{
+	background-color: #f1bec9;
+	margin: 0;
+
+}
+.r2 {
+	background-color: $primary2;
+	margin: 0;
 }
