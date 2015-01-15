@@ -9,6 +9,6 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "min": "https://github.com/owenversteeg/min"
+    "min": "https://github.com/owenversteeg/min.git#gh-pages"
   }
 }

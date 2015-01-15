@@ -1,14 +1,23 @@
+@import "../../bower_components/min/sass/min-master";
+
 @import "variables";
 @import "headings";
 body {
 	background-color: $primary1;
 }
 
+.out {
+	
+}
 
 li {
 	display: inline-block;
 }
-
+ul {
+	margin-top: 0;
+	padding-left: 0;
+	margin-left: 0;
+}
 .middleleft {
 	background-color: white;
 }
@@ -46,57 +55,9 @@ h5 {
 	background-color: $primary2;
 }
 
-//////* PICTURE STYLES *///////
+//////* PICTURE STYLES *//////
 
 
-
-.specialoffpic {
-	height: 120px;
-	width: 220px;
-	background-image: url(https://raw.githubusercontent.com/elizabrock/SavingsMultipliedRedux/master/app/assets/images/homepage/special_offers_callout.png);
-	background-size: cover;
-	background-repeat: no-repeat;
-	border-bottom-right-radius: 2em;
-}
-
-.messagebpic {
-	height: 120px;
-	max-width: 200px;
-	background-image: url(https://raw.githubusercontent.com/elizabrock/SavingsMultipliedRedux/master/app/assets/images/homepage/message_board_callout.png);
-	background-size: cover;
-	background-repeat: no-repeat;
-}
-
-.facebookpic {
-height: 120px;
-max-width: 200px;
-background-image: url(https://raw.githubusercontent.com/elizabrock/SavingsMultipliedRedux/master/app/assets/images/homepage/facebook_callout.png);
-background-size: cover;
-background-repeat: no-repeat;
-border-bottom-left-radius: 2em;
-}
-
-.twitterpic {
-	height: 120px;
-	width: 180px;
-	background-image: url(https://raw.githubusercontent.com/elizabrock/SavingsMultipliedRedux/master/app/assets/images/homepage/twitter_callout.png);
-	background-size: cover;
-	background-repeat: no-repeat;
-	}
-.logo-container {
-	height: 200px;
-	max-width: 400px;
-	background-image: url(https://raw.githubusercontent.com/elizabrock/SavingsMultipliedRedux/master/app/assets/images/owls/savings-multiplied-logo-WEB.png);
-	background-size: cover;
-}
-
-.topkidcontainer {
-	background-size: contain;
-	background-repeat: no-repeat;
-	height: 150px;
-	width: 300px;
-	background-image: url(https://raw.githubusercontent.com/elizabrock/SavingsMultipliedRedux/master/app/assets/images/children/twins.jpg);
-}
 
 .kid1, .kid2 {
 	width: 294px;
@@ -107,30 +68,6 @@ border-bottom-left-radius: 2em;
 .kid3 {
 	width: 294px; 
 	padding-right: 15px;
-}
-
-.middlekidcontainer {
-	background-size: contain;
-	background-repeat: no-repeat;
-	height: 150px;
-	width: 300px;
-	background-image: url(https://raw.githubusercontent.com/elizabrock/SavingsMultipliedRedux/master/app/assets/images/children/triplets.jpg);
-}
-
-.bottomkidcontainer {
-	background-size: contain;
-	background-repeat: no-repeat;
-	height: 150px;
-	width: 300px;
-	background-image: url(https://raw.githubusercontent.com/elizabrock/SavingsMultipliedRedux/master/app/assets/images/children/quads.jpg);
-}
-
-.treepic {
-	background-size: contain;
-	background-repeat: no-repeat;
-	height: 100px;
-	width: 70px;
-	background-image: url(https://raw.githubusercontent.com/elizabrock/SavingsMultipliedRedux/master/app/assets/images/homepage/tree.png);
 }
 
 
