@@ -4,13 +4,36 @@ body {
 	background-color: $primary1;
 }
 
+
+li {
+	display: inline-block;
+}
+
 .middleleft {
 	background-color: white;
 }
 
+.sidemiddle {
+	height: 200px;
+}
+
 h3 {
-	color: #9dc264
-	padding-right: 15px;
+	color: #9dc264;
+	padding-left: 20px;
+}
+h5 {
+	padding-left: 20px;
+}
+
+/////////* Row Styles *//////////
+.r3 {
+	background-color: #f1bec9;
+	margin: 0;
+
+}
+.r2 {
+	background-color: $primary2;
+	margin: 0;
 }
 .r4, .r5, .r6 {
 	margin-top: 0;
@@ -22,10 +45,44 @@ h3 {
 	padding-top: 80px;
 	background-color: $primary2;
 }
-li {
-	display: inline-block;
+
+//////* PICTURE STYLES *///////
+
+
+
+.specialoffpic {
+	height: 120px;
+	width: 220px;
+	background-image: url(https://raw.githubusercontent.com/elizabrock/SavingsMultipliedRedux/master/app/assets/images/homepage/special_offers_callout.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	border-bottom-right-radius: 2em;
 }
 
+.messagebpic {
+	height: 120px;
+	max-width: 200px;
+	background-image: url(https://raw.githubusercontent.com/elizabrock/SavingsMultipliedRedux/master/app/assets/images/homepage/message_board_callout.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.facebookpic {
+height: 120px;
+max-width: 200px;
+background-image: url(https://raw.githubusercontent.com/elizabrock/SavingsMultipliedRedux/master/app/assets/images/homepage/facebook_callout.png);
+background-size: cover;
+background-repeat: no-repeat;
+border-bottom-left-radius: 2em;
+}
+
+.twitterpic {
+	height: 120px;
+	width: 180px;
+	background-image: url(https://raw.githubusercontent.com/elizabrock/SavingsMultipliedRedux/master/app/assets/images/homepage/twitter_callout.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	}
 .logo-container {
 	height: 200px;
 	max-width: 400px;
@@ -73,7 +130,7 @@ li {
 	background-repeat: no-repeat;
 	height: 100px;
 	width: 70px;
-	background-image: url(https://raw.githubusercontent.com/elizabrock/SavingsMultipliedRedux/master/app/assets/images/homepage/tree.png)
+	background-image: url(https://raw.githubusercontent.com/elizabrock/SavingsMultipliedRedux/master/app/assets/images/homepage/tree.png);
 }
 
 
@@ -84,6 +141,8 @@ li {
 	height: 200px;
 	width: 400px;
 }
+
+
 .toplist {
 	border-top-right-radius: 2em;
 	background-color: white;
@@ -96,20 +155,12 @@ li {
 	
 }
 
-.sidemiddle {
-	height: 200px;
-}
+
 
 .middleleft, .kid1 {
 	background-color: white;
 	height: 200px;
 }
-.r3{
-	background-color: #f1bec9;
-	margin: 0;
 
-}
-.r2 {
-	background-color: $primary2;
-	margin: 0;
-}
+
+
