@@ -12,8 +12,11 @@ body {
 	background-color: white;
 }
 
-.out {
-	
+
+.topnav input {
+	background-color: white;
+	border-radius: 2em;
+	height: 12px;
 }
 
 li {
@@ -23,6 +26,18 @@ li {
 .topbuttons {
 	padding-top: 25px;
 }
+
+.topnav {
+	height: 51px;
+	margin-bottom: 0;
+	padding-top: 10px;
+}
+
+.topnav li {
+	padding-left: 25px;
+
+}
+
 ul {
 	text-align: center;
 	margin-top: 0;
