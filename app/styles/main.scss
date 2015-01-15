@@ -3,6 +3,19 @@
 body {
 	background-color: $primary1;
 }
+
+.middleleft {
+	background-color: white;
+}
+
+h3 {
+	color: #9dc264
+	padding-right: 15px;
+}
+.r4, .r5, .r6 {
+	margin-top: 0;
+	margin-bottom: -40px;
+}
 .r1 {
 	margin-top: 0;
 	margin-bottom: 0;
@@ -15,10 +28,56 @@ li {
 
 .logo-container {
 	height: 200px;
-	width: 400px;
+	max-width: 400px;
 	background-image: url(https://raw.githubusercontent.com/elizabrock/SavingsMultipliedRedux/master/app/assets/images/owls/savings-multiplied-logo-WEB.png);
 	background-size: cover;
 }
+
+.topkidcontainer {
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 150px;
+	width: 300px;
+	background-image: url(https://raw.githubusercontent.com/elizabrock/SavingsMultipliedRedux/master/app/assets/images/children/twins.jpg);
+}
+
+.kid1, .kid2 {
+	width: 294px;
+	padding-top: 15px;
+	padding-right: 15px;
+}
+
+.kid3 {
+	width: 294px; 
+	padding-right: 15px;
+}
+
+.middlekidcontainer {
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 150px;
+	width: 300px;
+	background-image: url(https://raw.githubusercontent.com/elizabrock/SavingsMultipliedRedux/master/app/assets/images/children/triplets.jpg);
+}
+
+.bottomkidcontainer {
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 150px;
+	width: 300px;
+	background-image: url(https://raw.githubusercontent.com/elizabrock/SavingsMultipliedRedux/master/app/assets/images/children/quads.jpg);
+}
+
+.treepic {
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 100px;
+	width: 70px;
+	background-image: url(https://raw.githubusercontent.com/elizabrock/SavingsMultipliedRedux/master/app/assets/images/homepage/tree.png)
+}
+
+
+
 .clogo {
 	border-top-left-radius: 2em;
 	background-color: white;
@@ -30,6 +89,20 @@ li {
 	background-color: white;
 	height: 200px;
 	width: 400px;
+}
+
+.out {
+	background-color: $primary1;
+	
+}
+
+.sidemiddle {
+	height: 200px;
+}
+
+.middleleft, .kid1 {
+	background-color: white;
+	height: 200px;
 }
 .r3{
 	background-color: #f1bec9;
