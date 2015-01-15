@@ -99,9 +99,13 @@ h4 {
 
 //////* PICTURE STYLES *//////
 
+.kid1 {
+	background-color: white;
+	height: 200px;
+	margin-top: 20px;
+}
 
-
-.kid1, .kid2 {
+.kid2 {
 	width: 294px;
 	padding-top: 15px;
 	padding-right: 15px;
@@ -110,6 +114,8 @@ h4 {
 .kid3 {
 	width: 294px; 
 	padding-right: 15px;
+	margin-top: 20px;
+	margin-bottom: 50px;
 }
 
 .bottomcontainer img {
@@ -153,10 +159,7 @@ h4 {
 	background-color: white;
 }
 
-.middleleft, .kid1 {
-	background-color: white;
-	height: 200px;
-}
+
 
 
 
