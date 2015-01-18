@@ -1,0 +1,71 @@
+
+
+///Main Styles///
+
+body {
+	background-color: $primary1;
+}
+
+
+.white {
+	background-color: white;
+}
+
+.topnav input {
+	background-color: white;
+	border-radius: 2em;
+	height: 12px;
+}
+
+
+li {
+	display: inline-block;
+	padding-top: 5px;
+}
+.topbuttons {
+	padding-top: 25px;
+}
+
+.topnav {
+	height: 51px;
+	margin-bottom: 0;
+	padding-top: 10px;
+}
+
+.topnav li {
+	padding-left: 25px;
+
+}
+
+ul {
+	text-align: center;
+	margin-top: 0;
+	padding-left: 0;
+	margin-left: 0;
+}
+.middleleft {
+	background-color: white;
+}
+
+.sidemiddle {
+	height: 200px;
+}
+
+h3 {
+	color: #9dc264;
+	padding-left: 20px;
+	font-family: Corben; 
+}
+
+
+ h5 {
+	padding-left: 20px;
+	color: #64c0c8;
+} 
+
+
+.logo {
+	height: 180px;
+	margin-left: 15px;
+	margin-top: -30px;
+}

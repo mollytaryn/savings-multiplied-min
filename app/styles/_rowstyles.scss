@@ -1,0 +1,24 @@
+/////////* Row Styles *//////////
+
+
+.r3 {
+	background-color: #f1bec9;
+	margin: 0;
+
+}
+.r2 {
+	background-color: $primary2;
+	margin: 0;
+	height: 180px;
+	overflow: visible;
+}
+.r4, .r5, .r6 {
+	margin-top: 0;
+	margin-bottom: -40px;
+}
+.r1 {
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-top: 80px;
+	background-color: $primary2;
+}
