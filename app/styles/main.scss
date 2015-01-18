@@ -167,8 +167,10 @@ h3 {
 	background-color: white;
 }
 
-
+////////////////////////////////////////////
 ///////////2nd Page Styling/////////////////
+////////////////////////////////////////////
+
 
 .main-header {
 	background-color: $primary2;
@@ -183,5 +185,84 @@ h3 {
 .link-container {
 	background-color: $primary1;
 }
+
+//////Search Results
+
+.r4 {
+	.full {
+		height: 100%;
+		border-radius: 0 0 2em 2em;
+	}
+
+	.green-container {
+				width: 100px;
+				height: 100px;
+				background-color: #EDF9D3;
+				margin: 0 auto;
+			}
+	.search-results {
+
+		p {
+			margin: 15px 0;
+			font-size: 1em;
+			color: darken(#8AB83A, 10%);
+		}
+
+		.sort-container {
+
+			p {
+				display: inline-block;
+			}
+
+			.page-list {
+				
+				display: inline-block;
+				float: right;
+				margin-right: 20px;
+				margin-top: -35px;
+
+					li {
+						color: darken(#8AB83A, 10%);
+						display: inline-block;
+						padding: 0 5px;
+						border-right: 2px solid darken(#8AB83A, 10%);
+
+						&:last-child  {
+							border-right: none;
+						}
+					}
+
+
+			}
+		}
+
+		.sort-results {
+
+
+			margin-bottom: 20px;
+
+			.sortresults-list {
+
+				li {
+					margin: 5px 10px;
+				}
+
+				p {
+					font-size: 0.8em;
+					width: 100px;
+				}
+			}
+		}
+	}
+}
+
+.big-container {
+	border-radius: 2em;
+}
+
+.link-container {
+	margin-top: 50px;
+}
+
 
 
