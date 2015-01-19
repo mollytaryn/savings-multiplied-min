@@ -42,6 +42,20 @@
 
 	.pink-nav {
 		font-size: 0.8em;
+		height: 70px;
+
+		input[type="text"] {
+			font-size: 0.9em;
+		}
+	}
+
+	.search-results {
+		.filters-selected {
+			padding-left: 10px;
+		}
+		.sort-container {
+			padding-left: 10px;
+		}
 	}
 
 }
