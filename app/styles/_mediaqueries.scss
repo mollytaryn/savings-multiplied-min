@@ -1,0 +1,47 @@
+
+
+@media screen and(max-width: 1200px){
+	.top-list {
+		width: 100%;
+		display: block;
+	}
+
+	.pink-nav {
+		width: 100%;
+		display: block;
+	}
+
+	.r4 {
+		margin-bottom: 0;
+	}
+}
+
+
+@media screen and(max-width: 870px){
+	.empty-column {
+		height: 0px;
+	}
+
+	.col.c3.middleleft.search-filters {
+		width: 90%;
+	}
+
+	.topbuttons {
+		padding-top: 0;
+	}
+
+	.toplist {
+		background-color: white;
+		height: 70%;
+
+		h4 {
+			margin: 0;
+			font-size: 0.8em;
+		}
+	}
+
+	.pink-nav {
+		font-size: 0.8em;
+	}
+
+}
