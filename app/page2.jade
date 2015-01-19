@@ -1,51 +1,207 @@
-doctype html
-html(lang="en-US")
-  head
-    link(href='http://fonts.googleapis.com/css?family=Corben:400,700' rel='stylesheet' type='text/css')
-    meta(charset="utf-8")
-    meta(http-equiv="X-UA-Compatible", content="IE=edge")
-    meta(name="viewport", content="width=device-width, initial-scale=1")
-    title My Title
-    link(rel='stylesheet', href='/styles/entireframework.min.css')    
-    link(rel="stylesheet" href="css/main.css")
-    
-  body
-      div.main-header
+extends layouts/master
 
-        div.signin
-             p Sign in | Sign up 
+block header
+ div.row.r1
+    div.col.c9 
+      | &nbsp
+    div.col.c3
+      p Sign in | Sign up 
+  div.row.r2
+    div.col.c2
+      | &nbsp
+    div.col.c4.clogo
+        img.logo(src='https://raw.githubusercontent.com/elizabrock/SavingsMultipliedRedux/master/app/assets/images/savings-multiplied-logo.png')
+    div.col.c4.toplist
+      ul.topbuttons
+        li: a.btn.btn-a.btn-sm.smooth About
+        li: a.btn.btn-b.btn-sm.smooth Contact
+        li: a.btn.btn-c.btn-sm.smooth Blog
+        li: a.btn.btn-a.btn-sm.smooth Press
+      h4 Where parents of multiples save, sell & share
 
-        div.row.r1.logo-container
-          div.col.c7 
-            div.logo-div This is where we insert our logo partial
-          div.col.c5
-            div.nav-div This is where we insert our nav partial
+  div.row.r3.pink-nav
+    div.col.c12
+      ul.topnav
+        li Buy
+        li Sell
+        li How it Works
+        li Links
+        li Community
+        li: input(type="text" placeholder="search")
+   
+block content
+  div.row.r4
+    div.col.c2
+      | &nbsp
+
+    div.col.c8.white.full
+      
+      div.col.c3.middleleft.search-filters
+        p Limit your search by:
+        hr 
+        ul
+          li
+            input.search( type="text" placeholder="") 
+          li 
+            button Search
+        
+        ul 
+          li  
+            span Condition:
+            ul  
+              li 
+                label.radio(for="new") 
+                  input#new( type="radio" name="condition" )
+                  .button-text New  
+              li 
+                label.radio(for="gentlyused") 
+                  input#gentlyused( type="radio" name="condition" )
+                  .button-text Gently Used  
+                
+        ul  
+          li  
+            span Size:
+            include ./partials/_sizes.jade
+
+        ul  
+          li  
+            span Season:
+            ul
+              li   
+                label.radio(for="allseasons") 
+                  input#allseasons( value="allseasons" type="radio" name="season" )
+      
+                  button-text All Seasons 
+            ul  
+              li   
+                label.radio(for="Spring") 
+                  input#Spring( value="Spring" type="radio" name="season" )
+                  
+                  button-text Spring
+            ul  
+              li   
+                label.radio(for="Summer") 
+                  input#Summer( value="Summer" type="radio" name="season" )
+                  
+                  button-text Summer
+            ul
+              li   
+                label.radio(for="Fall") 
+                  input#Fall( value="Fall" type="radio" name="season" )
+                  
+                  button-text Fall
+            ul  
+              li   
+                label.radio(for="Winter") 
+                  input#Winter( value="winter" type="radio" name="season" )
+                  
+                  button-text Winter
+
+        ul  
+          li  
+            span Type:
+            ul
+              li   
+                label.radio(for="any") 
+                  input#any( value="any" type="radio" name="type" )
+                  span
+                  button-text Any
+            ul  
+              li   
+                label.radio(for="onepiece") 
+                  input#onepiece( value="onepiece" type="radio" name="type" )
+                  span
+                  button-text One-Piece
+            ul
+              li   
+                label.radio(for="tops") 
+                  input#tops( value="tops" type="radio" name="type" )
+                  span
+                  button-text Tops            
+            ul
+              li   
+                label.radio(for="bottoms") 
+                  input#bottoms( value="bottoms" type="radio" name="type" )
+                  span
+                  button-text Bottoms 
+        ul
+          li 
+            .text Brand:
+            include ./partials/_linkhere.jade
+
+      div.col.c8.middleright.search-results
+        p All > Twin > B/G 
+        .sort-container
+          .sort-by
+            p sort by:
+            select
+              option Price
+              option Quality
+              option Rating
+          ul.page-list
+            li prev
+            li page num.
+            li next
+            li view all
+        .sort-results
+          ul.sortresults-list
+            li
+              .green-container
+              p Sailor Suits $15.00 Jane Joe 4 Hours
+            li
+              .green-container
+              p Sailor Suits $15.00 Jane Joe 4 Hours
+            li
+              .green-container
+              p Sailor Suits $15.00 Jane Joe 4 Hours
+            li
+              .green-container
+              p Sailor Suits $15.00 Jane Joe 4 Hours
+            li
+              .green-container
+              p Sailor Suits $15.00 Jane Joe 4 Hours
+            li
+              .green-container
+              p Sailor Suits $15.00 Jane Joe 4 Hours
+            li
+              .green-container
+              p Sailor Suits $15.00 Jane Joe 4 Hours
+            li
+              .green-container
+              p Sailor Suits $15.00 Jane Joe 4 Hours
+            li
+              .green-container
+              p Sailor Suits $15.00 Jane Joe 4 Hours
+            li
+              .green-container
+              p Sailor Suits $15.00 Jane Joe 4 Hours
+            li
+              .green-container
+              p Sailor Suits $15.00 Jane Joe 4 Hours
+            li
+              .green-container
+              p Sailor Suits $15.00 Jane Joe 4 Hours
+
+
+    div.col.c2
+      | &nbsp
+
+
+block footer
+  div.link-container
+    div.col.c3
+      | &nbsp
+    div.col.c6
+      ul
+        li Link here |
+        li Link here |
+        li Link here |
+        li Link here |
+        li Link here |
+        li Link here
+    div.col.c3
+      | &nbsp
 
 
 
-      div.row.r2 This is where the pink navbar is
-            li Buy
-            li Sell
-            li How it Works
-            li Links
-            li Community
-            li: input(type="text" placeholder="search")
-
-
-      div.row.r3.main-container
-        div.col.c4.left-content
-
-          div.left-content This is all content on the left side
-
-        div.col.c8.right-content This is all content on the right side
-          h4 Where parents of multiples save, sell & share
-
-
-      div.row.r4
-        div.col.c12
-          ul.image-links This is where the pictures of facebook, twitter etc. are
-      div.row.r5
-        div.col.c12
-          ul.reg-links This is where the regular bottom-most links are
-
-    script(src="js/main.js")
+  script(src="js/main.js")

@@ -51,11 +51,11 @@ block content
             ul  
               li 
                 label.radio(for="new") 
-                  input#new( type="radio" )
+                  input#new( type="radio" name="condition" )
                   .button-text New  
               li 
                 label.radio(for="gentlyused") 
-                  input#gentlyused( type="radio" )
+                  input#gentlyused( type="radio" name="condition" )
                   .button-text Gently Used  
                 
         ul  
@@ -63,46 +63,46 @@ block content
             span Size:
             ul  
               li  
-                label.radio(for="size4") 
-                  input#size4( value="1" type="radio" )
+                label.radio(for="size") 
+                  input#size( value="1" type="radio" name="size" )
                   span
                   button-text 4 
               li  
-                label.radio(for="size8") 
-                  input#size8( value="1" type="radio" )
+                label.radio(for="size") 
+                  input#size( value="0" type="radio" name="size" )
                   span
                   button-text 8 
             ul  
               li   
-                label.radio(for="size5") 
-                  input#size5( value="1" type="radio" )
+                label.radio(for="size") 
+                  input#size( value="0" type="radio" name="size" )
                   span
                   button-text 5 
               li   
                 label.radio(for="size9") 
-                  input#size9( value="1" type="radio" )
+                  input#size9( value="1" type="radio" name="size" )
                   span
                   button-text 9
             ul  
               li   
                 label.radio(for="size6") 
-                  input#size6( value="1" type="radio" )
+                  input#size6( value="1" type="radio" name="size" )
                   span
                   button-text 6
               li   
                 label.radio(for="size10") 
-                  input#size10( value="1" type="radio" )
+                  input#size10( value="1" type="radio" name="size" )
                   span
                   button-text 10 
             ul  
               li   
                 label.radio(for="size7") 
-                  input#size7( value="1" type="radio" )
+                  input#size7( value="1" type="radio" name="size" )
                   span
                   button-text 7 
               li   
                 label.radio(for="size11") 
-                  input#size11( value="1" type="radio" )
+                  input#size11( value="1" type="radio" name="size" )
                   span
                   button-text 11 
 
@@ -112,31 +112,31 @@ block content
             ul
               li   
                 label.radio(for="allseasons") 
-                  input#allseasons( value="allseasons" type="radio" )
+                  input#allseasons( value="allseasons" type="radio" name="season" )
       
                   button-text All Seasons 
             ul  
               li   
                 label.radio(for="Spring") 
-                  input#Spring( value="Spring" type="radio" )
+                  input#Spring( value="Spring" type="radio" name="season" )
                   
                   button-text Spring
             ul  
               li   
                 label.radio(for="Summer") 
-                  input#Summer( value="Summer" type="radio" )
+                  input#Summer( value="Summer" type="radio" name="season" )
                   
                   button-text Summer
             ul
               li   
                 label.radio(for="Fall") 
-                  input#Fall( value="Fall" type="radio" )
+                  input#Fall( value="Fall" type="radio" name="season" )
                   
                   button-text Fall
             ul  
               li   
                 label.radio(for="Winter") 
-                  input#Winter( value="winter" type="radio" )
+                  input#Winter( value="winter" type="radio" name="season" )
                   
                   button-text Winter
 
@@ -146,25 +146,25 @@ block content
             ul
               li   
                 label.radio(for="any") 
-                  input#any( value="any" type="radio" )
+                  input#any( value="any" type="radio" name="type" )
                   span
                   button-text Any
             ul  
               li   
                 label.radio(for="onepiece") 
-                  input#onepiece( value="onepiece" type="radio" )
+                  input#onepiece( value="onepiece" type="radio" name="type" )
                   span
                   button-text One-Piece
             ul
               li   
                 label.radio(for="tops") 
-                  input#tops( value="tops" type="radio" )
+                  input#tops( value="tops" type="radio" name="type" )
                   span
                   button-text Tops            
             ul
               li   
                 label.radio(for="bottoms") 
-                  input#bottoms( value="bottoms" type="radio" )
+                  input#bottoms( value="bottoms" type="radio" name="type" )
                   span
                   button-text Bottoms 
         ul
