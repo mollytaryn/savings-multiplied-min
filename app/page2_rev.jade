@@ -18,10 +18,6 @@ block header
         li: a.btn.btn-c.btn-sm.smooth Blog
         li: a.btn.btn-a.btn-sm.smooth Press
 
-      h4 Where parents of multiples save, sell & share
-    div.col.c2 
-      | &nbsp
-
   div.row.r3.pink-nav
     div.col.c12
       ul.topnav
@@ -36,9 +32,160 @@ block content
   div.row.r4
     div.col.c2
       | &nbsp
+
     div.col.c8.white.full
-      div.col.c4.middleleft.text.search-filters
-        p This is where the search filters will be
+      
+      div.col.c3.middleleft.search-filters
+        p Limit your search by:
+        hr 
+        ul
+          li
+            input.search( type="text" placeholder="") 
+          li 
+            button Search
+        
+        ul 
+          li  
+            span Condition:
+            ul  
+              li 
+                label.radio(for="new") 
+                  input#new( type="radio" )
+                  .button-text New  
+              li 
+                label.radio(for="gentlyused") 
+                  input#gentlyused( type="radio" )
+                  .button-text Gently Used  
+                
+        ul  
+          li  
+            span Size:
+            ul  
+              li  
+                label.radio(for="size4") 
+                  input#size4( value="1" type="radio" )
+                  span
+                  button-text 4 
+              li  
+                label.radio(for="size8") 
+                  input#size8( value="1" type="radio" )
+                  span
+                  button-text 8 
+            ul  
+              li   
+                label.radio(for="size5") 
+                  input#size5( value="1" type="radio" )
+                  span
+                  button-text 5 
+              li   
+                label.radio(for="size9") 
+                  input#size9( value="1" type="radio" )
+                  span
+                  button-text 9
+            ul  
+              li   
+                label.radio(for="size6") 
+                  input#size6( value="1" type="radio" )
+                  span
+                  button-text 6
+              li   
+                label.radio(for="size10") 
+                  input#size10( value="1" type="radio" )
+                  span
+                  button-text 10 
+            ul  
+              li   
+                label.radio(for="size7") 
+                  input#size7( value="1" type="radio" )
+                  span
+                  button-text 7 
+              li   
+                label.radio(for="size11") 
+                  input#size11( value="1" type="radio" )
+                  span
+                  button-text 11 
+
+        ul  
+          li  
+            span Season:
+            ul
+              li   
+                label.radio(for="allseasons") 
+                  input#allseasons( value="allseasons" type="radio" )
+      
+                  button-text All Seasons 
+            ul  
+              li   
+                label.radio(for="Spring") 
+                  input#Spring( value="Spring" type="radio" )
+                  
+                  button-text Spring
+            ul  
+              li   
+                label.radio(for="Summer") 
+                  input#Summer( value="Summer" type="radio" )
+                  
+                  button-text Summer
+            ul
+              li   
+                label.radio(for="Fall") 
+                  input#Fall( value="Fall" type="radio" )
+                  
+                  button-text Fall
+            ul  
+              li   
+                label.radio(for="Winter") 
+                  input#Winter( value="winter" type="radio" )
+                  
+                  button-text Winter
+
+        ul  
+          li  
+            span Type:
+            ul
+              li   
+                label.radio(for="any") 
+                  input#any( value="any" type="radio" )
+                  span
+                  button-text Any
+            ul  
+              li   
+                label.radio(for="onepiece") 
+                  input#onepiece( value="onepiece" type="radio" )
+                  span
+                  button-text One-Piece
+            ul
+              li   
+                label.radio(for="tops") 
+                  input#tops( value="tops" type="radio" )
+                  span
+                  button-text Tops            
+            ul
+              li   
+                label.radio(for="bottoms") 
+                  input#bottoms( value="bottoms" type="radio" )
+                  span
+                  button-text Bottoms 
+        ul
+          li 
+            .text Brand:
+            select 
+              option Jack and Jill
+              option Garanimals
+              option Osh Kosh
+              option Gap
+              option Old Navy
+              option Rothschild
+              option Beanpole
+              option Blue Ivy
+              option Juicy
+              option Hello Kitty 
+        
+
+
+ 
+
+
       div.col.c8.middleright.search-results
         p All > Twin > B/G 
         .sort-container
