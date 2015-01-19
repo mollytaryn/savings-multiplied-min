@@ -1,83 +1,113 @@
-doctype html
-html(lang="en-US")
-  head
-    link(href='http://fonts.googleapis.com/css?family=Corben:400,700' rel='stylesheet' type='text/css')
-    meta(charset="utf-8")
-    meta(http-equiv="X-UA-Compatible", content="IE=edge")
-    meta(name="viewport", content="width=device-width, initial-scale=1")
-    title My Title
-    link(rel='stylesheet', href='/styles/entireframework.min.css')    
-    link(rel="stylesheet" href="css/main.css")
-    
-  body
-      div.row.r1
-        div.col.c9 
-          | &nbsp
-        div.col.c3
-          p Sign in | Sign up 
-      div.row.r2
-        div.col.c2
-          | &nbsp
-        div.col.c4.clogo
-            img.logo(src='https://raw.githubusercontent.com/elizabrock/SavingsMultipliedRedux/master/app/assets/images/savings-multiplied-logo.png')
-        div.col.c4.toplist
-          ul.topbuttons
-            li: a.btn.btn-a.btn-sm.smooth About
-            li: a.btn.btn-b.btn-sm.smooth Contact
-            li: a.btn.btn-c.btn-sm.smooth Blog
-            li: a.btn.btn-a.btn-sm.smooth Press
+extends layouts/master
 
-          h4 Where parents of multiples save, sell & share
-        div.col.c2 
-          | &nbsp
+block header
+ div.row.r1
+    div.col.c9 
+      | &nbsp
+    div.col.c3
+      p Sign in | Sign up 
+  div.row.r2
+    div.col.c2
+      | &nbsp
+    div.col.c4.clogo
+        img.logo(src='https://raw.githubusercontent.com/elizabrock/SavingsMultipliedRedux/master/app/assets/images/savings-multiplied-logo.png')
+    div.col.c4.toplist
+      ul.topbuttons
+        li: a.btn.btn-a.btn-sm.smooth About
+        li: a.btn.btn-b.btn-sm.smooth Contact
+        li: a.btn.btn-c.btn-sm.smooth Blog
+        li: a.btn.btn-a.btn-sm.smooth Press
 
-      div.row.r3.pink-nav
-        div.col.c12
-          ul.topnav
-            li Buy
-            li Sell
-            li How it Works
-            li Links
-            li Community
-            li: input(type="text" placeholder="search")
-      div.row.r4
-        div.col.c2
-          | &nbsp
-        div.col.c8.white
-          div.col.c4.middleleft.text.search-filters
-            table
-              thead
-                th header 1
-                th header 2 
-              tbody
-                tr
-                  td 3
-                  td 5 
-                tr
-                  td 6
-                  td 10   
-                tr
-                  td 3
-                  td 4 
+  div.row.r3.pink-nav
+    div.col.c12
+      ul.topnav
+        li Buy
+        li Sell
+        li How it Works
+        li Links
+        li Community
+        li: input(type="text" placeholder="search")
+   
+block content
+  div.row.r4
+    div.col.c2
+      | &nbsp
+    div.col.c8.white.full
+      div.col.c4.middleleft.text.search-filters
+        p This is where the search filters will be
+      div.col.c8.middleright.search-results
+        p All > Twin > B/G 
+        .sort-container
+          .sort-by
+            p sort by:
+            select
+              option Price
+              option Quality
+              option Rating
+          ul.page-list
+            li prev
+            li page num.
+            li next
+            li view all
+        .sort-results
+          ul.sortresults-list
+            li
+              .green-container
+              p Sailor Suits $15.00 Jane Joe 4 Hours
+            li
+              .green-container
+              p Sailor Suits $15.00 Jane Joe 4 Hours
+            li
+              .green-container
+              p Sailor Suits $15.00 Jane Joe 4 Hours
+            li
+              .green-container
+              p Sailor Suits $15.00 Jane Joe 4 Hours
+            li
+              .green-container
+              p Sailor Suits $15.00 Jane Joe 4 Hours
+            li
+              .green-container
+              p Sailor Suits $15.00 Jane Joe 4 Hours
+            li
+              .green-container
+              p Sailor Suits $15.00 Jane Joe 4 Hours
+            li
+              .green-container
+              p Sailor Suits $15.00 Jane Joe 4 Hours
+            li
+              .green-container
+              p Sailor Suits $15.00 Jane Joe 4 Hours
+            li
+              .green-container
+              p Sailor Suits $15.00 Jane Joe 4 Hours
+            li
+              .green-container
+              p Sailor Suits $15.00 Jane Joe 4 Hours
+            li
+              .green-container
+              p Sailor Suits $15.00 Jane Joe 4 Hours
 
-              div.col.c8.middleright.kid1.search-results
-            p This is where the search results will be
-        div.col.c2
-          | &nbsp
-      div.row.r5.link-container
-        div.col.c3
-          | &nbsp
-        div.col.c6
-          ul
-            li Link here |
-            li Link here |
-            li Link here |
-            li Link here |
-            li Link here |
-            li Link here
-        div.col.c3
-          | &nbsp
+
+    div.col.c2
+      | &nbsp
+
+
+block footer
+  div.link-container
+    div.col.c3
+      | &nbsp
+    div.col.c6
+      ul
+        li Link here |
+        li Link here |
+        li Link here |
+        li Link here |
+        li Link here |
+        li Link here
+    div.col.c3
+      | &nbsp
 
 
 
-    script(src="js/main.js")
+  script(src="js/main.js")

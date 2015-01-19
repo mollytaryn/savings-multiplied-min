@@ -1,0 +1,70 @@
+
+//////* PICTURE STYLES *//////
+
+.kid1 {
+	background-color: white;
+	height: 200px;
+	margin-top: 20px;
+}
+
+.kid2 {
+	width: 294px;
+	padding-top: 15px;
+	padding-right: 15px;
+}
+
+.kid3 {
+	width: 294px; 
+	padding-right: 15px;
+	margin-top: 20px;
+	margin-bottom: 50px;
+}
+
+.bottomcontainer img {
+	padding-left: 13px;
+	margin-left: 5px;
+	margin-bottom: 15px;
+}
+
+.bottomcontainer {
+	width: 100%;
+	height: 100%;
+	margin-bottom: 15px;
+	border-bottom-left-radius: 2em;
+	border-bottom-right-radius: 2em;
+	background-color: white;
+	//overflow: hidden;
+}
+
+
+.clogo {
+	border-top-left-radius: 2em;
+	background-color: white;
+	height: 180px;
+	
+}
+
+
+.toplist {
+	border-top-right-radius: 2em;
+	background-color: white;
+	height: 180px;
+
+	h4 {
+		text-align: center;
+		color: green;
+		font-family: Corben; 
+		color: $primary1;
+		letter-spacing: 1px;
+	}
+
+}
+
+.out {
+	background-color: $primary1;
+	
+}
+
+.white {
+	background-color: white;
+}
