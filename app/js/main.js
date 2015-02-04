@@ -1,5 +1,10 @@
-;(function(){
-  'use strict';
+(function(){
 
-  console.log('NSS Template Loaded');
+  'use strict';
+  $.get('https://savingsmultipliedssh.firebaseio.com/items.json', function(data){
+    console.log(data);
+  });
+
+
+
 }());
