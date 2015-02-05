@@ -2,25 +2,32 @@
   'use strict';
 
   $(document).ready(function(){
+    window.imgError = function(img){
+      img.onerror = "";
+      img.src = 'http://www.editorialmanager.com/grame/img/placeholder.gif';
+      return true;
+    }
+
     var url = 'https://savingsmultipliedssh.firebaseio.com/items.json';
 
 
      $.get(url, function(data){
-       var $image = data[0].image,
-           $seller = data[0].seller,
-           $title = data[0].title,
-           $price = data[0].price,
-           $endDate = data[0].endDate;
-           $timeCalc = moment($endDate).fromNow();
 
+       _.forEach(data, function(item){
+         var $image = item.image;
+         var $seller = item.seller;
+         var $title = item.title;
+         var $price = item.price;
+         var $endDate = item.endDate;
 
-       var $item = $('<div class="sortresults-list"><img src="' + $image + '" class="green-container"><div>' + $seller + '</div><div>' + $title + '</div></div>');
+         var $item = $('<div class="sortresults-list"><img src="' + $image + '" class="green-container" onError="imgError(this);"><div class="text">' + $seller + '</div><div class="text">' + $title + '</div></div>');
 
-       $('.sort-results').append($item);
+         $('.sort-results').append($item);
+       });
+
      });
 
-
-  });
- 
+   });
 
 }());
+
